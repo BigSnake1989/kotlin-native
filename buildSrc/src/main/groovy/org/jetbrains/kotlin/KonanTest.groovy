@@ -70,6 +70,7 @@ abstract class KonanTest extends JavaExec {
         // TODO: that's a long reach up the project tree.
         // May be we should reorganize a little.
         dependsOn(project.rootProject.tasks['dist'])
+        dependsOn(project.rootProject.tasks['cross_dist'])
     }
 
     @Override
